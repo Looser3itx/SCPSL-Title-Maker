@@ -5,7 +5,6 @@ def generate_gradient_word(word, start_color, end_color):
         b = int((1 - t) * color1[2] + t * color2[2])
         return "#{:02x}{:02x}{:02x}".format(r, g, b)
 
-    # Validate input colors and word
     if not (start_color and end_color and word):
         return "Error"
 
@@ -22,7 +21,7 @@ def generate_gradient_word(word, start_color, end_color):
 
     word_len = len(word)
     if word_len > 0:
-        step = 1.0 / max(word_len - 1, 1)  # Avoid division by zero
+        step = 1.0 / max(word_len - 1, 1)
         for i in range(word_len):
             t = step * i
             color = interpolate_color(start_color, end_color, t)
