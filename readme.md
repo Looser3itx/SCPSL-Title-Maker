@@ -1,0 +1,1 @@
+Hello, There this is 3itx this is an Title Maker that only for gradient just insert ur first color and second color and output it for you no more manually Typing Word to word just to make Gradiant Color
